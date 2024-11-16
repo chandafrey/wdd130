@@ -1,0 +1,26 @@
+nav {
+    background-color: rgb(113, 27, 61);
+    padding: 10px;
+}
+
+nav a {
+    color: rgb(219, 205, 220);
+    display: block;
+    padding: 20px;
+}
+h1 {
+    color: rgb(95, 17, 71);
+    /* background-color: rgb(172, 161, 161); */
+}
+
+img {
+    width: 250px;
+    height: auto;
+    border: 3px solid rgb(66, 65, 65);
+    padding: 0px;
+    box-shadow: 0 0 30px rgb(33, 28, 28);
+}
+main p {
+    font-style: oblique;
+    padding: 10px;
+}
