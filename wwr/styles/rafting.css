@@ -1,0 +1,150 @@
+/* Step 4 #2 says to define the CSS variables :root pseudo-class selector
+using the color scheme I selected previously...This is done with 2 dashes
+followed by the color name I assign followed by the color code.  This means
+later in the document when I need to say a color, I just say color: var(color-name)
+instead of typing out the rgb values each time.  It also makes it easier for me
+to change my whole document at one time if my color name stays the same even if
+I need to change the color value a bit....It can be done here at the :root */
+:root {
+
+    /* https://coolors.co/palette/291711-474b24-4e8098-93a29b-cbe7f3 */
+    --primary-brown: rgb(41, 23, 17);
+    --primary-green: rgb(71, 75, 36);
+    --secondary-blue: rgb(78, 128, 152);
+    --accent1-light-green: rgb(147, 162, 155);
+    --accent2-light-blue: rgb(203, 231, 243);
+
+    
+    --accent1-dark-blue: rgb(84, 135, 161);
+    --accent2-orange: rgb(209, 98, 0);
+    --accent3-gray: rgb(114, 114, 114);
+
+}
+/* *{is my universal selector and selects the whole page.  
+we want to put margin and padding to 0 */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+/* Recommended to start with this declaration to help control the aspect
+ratio of images.  It sets ALL image widths to 100% of the width of their
+containers and the height to auto, thus maintaining the images intrinsic aspect ration. */
+img {
+    width: 100%;
+    height: auto;
+}
+nav a {
+    padding: 5px;
+}
+body {
+    margin: 2rem;
+    
+}
+/* Does my <nav> section need some padding or margin? */
+
+/* adding a class .logo-box sizing here seems to help */
+.logo-box {
+    width: 300px;    
+    height: auto;
+}
+/* my overlay activity has me do a .hero{ before moving onto the .hero img
+ */
+ .hero {
+    position: relative;
+    padding-top: 5px;
+ }
+
+/* I need to tell my class .hero img to fill the entire width of the page
+display, width, height are copied as given in assignment.
+I added position: relative and object-fit: cover....not sure if those are 
+needed.  Also, not sure if my image is large enough.  The assignment says
+my image should be edited to be large enough to fill this space.  You cannot
+force images to be larger than their original size otherwise they get pixelated
+or distorted.
+/*  */
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/* assignment Step 5 #3 says the h1 heading is positioned absolutely
+/*  */
+h1 {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    background-color: var(--secondary-blue);
+    opacity: .8;
+    color: var(--primary-brown);
+
+    font-family: Karla, Arial, sans-serif;
+    font-size: 4em;
+    text-align: center;
+    text-shadow: 3px 3px 5px #3a3838; 
+          
+}
+/* assignment Step 5 #4 says the article section is positioned absolutely
+Do I just do it as article { or .hero.article { or  something else?
+What top/bottom, left/right do I tell it? 
+Do I tell it here to have a box width or something? 
+The example also shows a background box under the article with some padding around
+The overlay activity had an opacity property that I think will be good here too
+*/
+article {
+    position: absolute;
+    top: 75px;
+    margin: 65px;
+    
+    padding: 15px;
+    width: 80%;
+    /* height: 250px; */
+    
+    background-color: var(--accent1-dark-blue);
+    opacity: 0.9;
+}
+/* I think I need the article img to float right.  Do I give it any other
+dimensions?  How do I get it to be smaller? */
+
+
+article p {
+    text-align: left;
+    /* padding: 2px; */
+    font-size: 1.5em;
+    /* color: white; */
+    color: var(--accent2-light-blue);
+}
+article img {
+    max-width: 375px;
+    float: right;
+    
+}
+h2 {
+    font-family: Karla, Arial, sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+p {
+    font-family: Montserrat, Arial, sans-serif;
+}
+section img {
+    width: 50rem;
+    padding: 5px;
+    /* margin: 25px; */
+}
+
+/* do I need a footer with font-size? */
+footer p {
+    font-size: 1em;
+}
+/* Step 4 #5 says to remove the default style of underlines specifically
+on sociallinks <a> hyperlinks.  Do this with declaration text-decoration: none;
+To specifically target only the SOCIAL LINKS 'a hrefs' and not all 'a hrefs'
+type .classname (space) selector name {} */
+.sociallinks a {
+    text-decoration: none;
+}
+.sociallinks img {
+    width: 50px;
+}
