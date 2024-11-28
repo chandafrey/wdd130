@@ -123,9 +123,9 @@ h1 {
     font-family: Karla, Arial, sans-serif;
     font-size: 4em;
     text-align: center;
-    text-shadow: 4px 4px 6px #3a3838; 
-          
+    text-shadow: 4px 4px 6px #3a3838;           
 }
+
 /* assignment Step 5 #4 says the article section is positioned absolutely
 Do I just do it as article { or .hero.article { or  something else?
 What top/bottom, left/right do I tell it? 
