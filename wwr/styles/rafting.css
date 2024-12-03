@@ -198,6 +198,7 @@ p {
 .figure {
     display: grid;  
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 
     justify-content: center;
     align-content: center;
     column-gap: 25px;
