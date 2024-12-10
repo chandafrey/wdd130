@@ -401,7 +401,7 @@ button:hover {
     gap: 10rem;
     align-items: center;
     width: 100%; 
-    padding-bottom: 12px;
+    padding-bottom: 24px;
 
 }
 .map iframe { 
@@ -524,14 +524,15 @@ table {
     font-family: sans-serif;
     font-size: 1rem;
     letter-spacing: 1px;
-    margin-bottom: 12px;
+    margin-top: 24px;
+    margin-bottom: 24px;
   }
   
   caption {
     caption-side:top;
     padding: 10px;
     font-weight: bold;
-    font-size: large;
+    font-size: xx-large;
   }
   
   thead,
